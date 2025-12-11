@@ -51,4 +51,4 @@ clean:
 	$(RM) *.ptx *.o gpu_burn
 
 image:
-	docker build --build-arg CUDA_VERSION=${CUDA_VERSION} --build-arg IMAGE_DISTRO=${IMAGE_DISTRO} -t ${IMAGE_NAME} .
+	docker build --build-arg COMPUTE=${COMPUTE} --build-arg CUDA_VERSION=${CUDA_VERSION} --build-arg IMAGE_DISTRO=${IMAGE_DISTRO} -t ${IMAGE_NAME} .
